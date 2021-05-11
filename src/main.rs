@@ -72,7 +72,9 @@ fn create_kml(point: &geo::Point) -> String {
       <name>ISS</name>
       <styleUrl>#default</styleUrl>
       <Point><coordinates>{},{},0</coordinates></Point>
-    </Placemark>",
+    </Placemark>
+    </Document>
+    </kml>",
         point.lon, point.lat
     );
 
